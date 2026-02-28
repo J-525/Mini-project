@@ -1,8 +1,10 @@
-if event.type == ecodes.EV_KEY and event.value == 1:
-    current_time = time.time()
+from pynput.keyboard import Controller
+import time
 
-    if last_time is not None:
-        delay = current_time - last_time
-        print("Delay:", delay)
+keyboard = Controller()
 
-    last_time = current_time
+payload = "hello this is automated typing\n"
+
+for char in payload:
+    keyboard.type(char)
+    time.sleep(0.002)   # VERY FAST

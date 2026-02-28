@@ -1,0 +1,41 @@
+import os
+import time
+
+shell=os.environ.get("SHELL")
+shell_name = os.path.basename(shell)
+history_file = os.path.expanduser(f"~/.{shell_name}_history")
+
+print("test")
+
+SUSPICIOUS_COMMANDS = [
+    "wget", "curl", "nc", "netcat",
+    f"{shell_name} -i", "chmod 777",
+    "/dev/tcp", "mkfs", "dd",
+    "rm -rf", "sudo su"
+]
+def sus_finder():
+
+    with open(history_file, "r", errors="ignore") as f:
+        lines = f.readlines()
+    f.close()
+    sus=lines[-5:]
+
+    return ''.join(sus)
+    
+
+
+def beep(risk):
+    sus=sus_finder()
+    print(sus)
+    print("ALERT: BasdUSB attack detected!")
+    print(f"Risk Level: {risk}")
+    for command in SUSPICIOUS_COMMANDS:
+        if command in sus:
+            print(f"ALERT: Suspicious command detected: {command}")
+            #print(f"Context: {sus}")
+            print("Time:",time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+            break
+
+
+#if __name__ == "__main__":
+#    beep(10)
