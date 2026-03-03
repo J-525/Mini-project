@@ -5,7 +5,7 @@ shell=os.environ.get("SHELL")
 shell_name = os.path.basename(shell)
 history_file = os.path.expanduser(f"~/.{shell_name}_history")
 
-print("test")
+#print("test")
 
 SUSPICIOUS_COMMANDS = [
     "wget", "curl", "nc", "netcat",
@@ -15,9 +15,13 @@ SUSPICIOUS_COMMANDS = [
 ]
 def sus_finder():
 
+    if not os.path.exists(history_file):
+        print(f"History file not found: {history_file}")
+        return ""
+
     with open(history_file, "r", errors="ignore") as f:
         lines = f.readlines()
-    f.close()
+    
     sus=lines[-5:]
 
     return ''.join(sus)
@@ -27,7 +31,7 @@ def sus_finder():
 def beep(risk):
     sus=sus_finder()
     print(sus)
-    print("ALERT: BasdUSB attack detected!")
+    print("ALERT: BadUSB attack detected!")
     print(f"Risk Level: {risk}")
     for command in SUSPICIOUS_COMMANDS:
         if command in sus:

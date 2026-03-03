@@ -36,3 +36,13 @@
 [2026-02-28 11:54:47]     Serial:  NO_SERIAL
 [2026-02-28 11:54:47]     WARNING: Device lacks serial or is virtual. Flagging for Module 3...
 [2026-02-28 11:54:50] SYSTEM SHUTDOWN: Monitor stopped by user.
+[2026-02-28 12:03:59] SYSTEM START: Monitoring HID Subsystem for BadUSB threats...
+[2026-02-28 12:04:05] ALERT: New HID Device Detected!
+[2026-02-28 12:04:05]     Product: Generic HID | VID: UNKNOWN | PID: UNKNOWN
+[2026-02-28 12:04:05]     Serial:  NO_SERIAL
+[2026-02-28 12:04:05]     WARNING: Device lacks serial or is virtual. Flagging for Module 3...
+[2026-02-28 12:04:05] ALERT: New HID Device Detected!
+[2026-02-28 12:04:05]     Product: Generic HID | VID: UNKNOWN | PID: UNKNOWN
+[2026-02-28 12:04:05]     Serial:  NO_SERIAL
+[2026-02-28 12:04:05]     WARNING: Device lacks serial or is virtual. Flagging for Module 3...
+[2026-02-28 12:04:28] SYSTEM SHUTDOWN: Monitor stopped by user.
