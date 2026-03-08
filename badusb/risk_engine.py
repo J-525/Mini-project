@@ -26,6 +26,18 @@ def evaluate_risk(delays, total_keys, backspace_count):
 
     alert = risk >= config.RISK_THRESHOLD
    
+    pauses = [delay for delay in delays if delay > config.PAUSE_THRESHOLD]
+
+    if len(pauses) == 0: 
+        risk += 2
+
+    rythm_ratio=std_dev / avg_delay if avg_delay > 0 else 0
+
+    if rythm_ratio < config.RYTHM_THRESHOLD:
+        risk += 2
+    
+    alert = risk >= config.RISK_THRESHOLD
+
     return risk,alert
 
 

@@ -11,7 +11,7 @@ SUSPICIOUS_COMMANDS = [
     "wget", "curl", "nc", "netcat",
     f"{shell_name} -i", "chmod 777",
     "/dev/tcp", "mkfs", "dd",
-    "rm -rf", "sudo su"
+    "rm -rf", "sudo su" ,"sudo"
 ]
 def sus_finder():
 
@@ -30,12 +30,12 @@ def sus_finder():
 
 def beep(risk):
     sus=sus_finder()
-    print(sus)
-    print("ALERT: BadUSB attack detected!")
+    #zprint(sus)
+    print("\nALERT: BadUSB attack detected!")
     print(f"Risk Level: {risk}")
     for command in SUSPICIOUS_COMMANDS:
         if command in sus:
-            print(f"ALERT: Suspicious command detected: {command}")
+            print(f"\n ALERT: Suspicious command detected: {command}")
             #print(f"Context: {sus}")
             print("Time:",time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
             break
