@@ -1,5 +1,6 @@
 import statistics
 import config
+import sus
 
 def evaluate_risk(delays, total_keys, backspace_count):
     risk = 0
@@ -24,8 +25,11 @@ def evaluate_risk(delays, total_keys, backspace_count):
     if mistake_ratio < config.MISTAKE_RATIO_MIN:
         risk += 2
 
+    if sus.is_sus:
+        risk += 5
+
     alert = risk >= config.RISK_THRESHOLD
-   
+    
     pauses = [delay for delay in delays if delay > config.PAUSE_THRESHOLD]
 
     if len(pauses) == 0: 

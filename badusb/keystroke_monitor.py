@@ -27,6 +27,10 @@ def main(stop_event):
                 if ecodes.KEY_A in keys and ecodes.KEY_Z in keys:
                     devices[dev.fd]=dev
                     print("new device:",dev.name)
+                    delays.clear()
+                    last_time = None
+                    window_keys = 0
+                    window_corrections = 0
 
     #devices = {dev.fd: dev for dev in devices}
 
