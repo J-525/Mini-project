@@ -1,32 +1,9 @@
-2026-03-18 21:56:24,077 - INFO - BadUSB detected | Risk: 26
-2026-03-18 21:56:25,196 - INFO - BadUSB detected | Risk: 26
-2026-03-18 21:56:26,971 - INFO - BadUSB detected | Risk: 12
-2026-03-18 21:56:28,059 - INFO - BadUSB detected | Risk: 14
-2026-03-18 21:56:29,821 - INFO - BadUSB detected | Risk: 12
-2026-03-18 21:56:30,892 - INFO - BadUSB detected | Risk: 14
-2026-03-18 21:56:32,646 - INFO - BadUSB detected | Risk: 12
-2026-03-18 21:56:33,922 - INFO - BadUSB detected | Risk: 16
-2026-03-18 22:04:04,421 - INFO - BadUSB detected | Risk: 26
-2026-03-18 22:04:05,530 - INFO - BadUSB detected | Risk: 26
-2026-03-18 22:04:07,322 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:04:08,380 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:04:10,136 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:04:11,224 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:04:12,991 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:04:14,196 - INFO - BadUSB detected | Risk: 16
-2026-03-18 22:11:00,847 - INFO - BadUSB detected | Risk: 24
-2026-03-18 22:11:01,982 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:11:03,765 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:04,821 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:11:06,447 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:07,555 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:11:09,442 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:10,675 - INFO - BadUSB detected | Risk: 16
-2026-03-18 22:11:29,882 - INFO - BadUSB detected | Risk: 26
-2026-03-18 22:11:31,009 - INFO - BadUSB detected | Risk: 26
-2026-03-18 22:11:32,812 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:33,876 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:11:35,602 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:36,709 - INFO - BadUSB detected | Risk: 14
-2026-03-18 22:11:38,503 - INFO - BadUSB detected | Risk: 12
-2026-03-18 22:11:39,687 - INFO - BadUSB detected | Risk: 16
+2026-03-18 22:20:47,140 - INFO - BadUSB detected | Risk: 7 | Device: AT Translated Set 2 keyboard
+2026-03-18 22:20:57,285 - INFO - BadUSB detected | Risk: 26 | Device: ydotoold virtual device
+2026-03-18 22:20:58,392 - INFO - BadUSB detected | Risk: 26 | Device: ydotoold virtual device
+2026-03-18 22:21:00,124 - INFO - BadUSB detected | Risk: 12 | Device: ydotoold virtual device
+2026-03-18 22:21:01,257 - INFO - BadUSB detected | Risk: 14 | Device: ydotoold virtual device
+2026-03-18 22:21:02,939 - INFO - BadUSB detected | Risk: 12 | Device: ydotoold virtual device
+2026-03-18 22:21:04,090 - INFO - BadUSB detected | Risk: 14 | Device: ydotoold virtual device
+2026-03-18 22:21:05,835 - INFO - BadUSB detected | Risk: 12 | Device: ydotoold virtual device
+2026-03-18 22:21:07,048 - INFO - BadUSB detected | Risk: 16 | Device: ydotoold virtual device

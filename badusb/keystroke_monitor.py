@@ -103,7 +103,7 @@ def main(stop_event):
                                         #print("Potential automated input detected! Risk Level:", risk)
                                         last_alert_time = time.time()
                                         #print(last_alert_time)
-                                        message = f"BadUSB detected | Risk: {risk}"
+                                        message = f"BadUSB detected | Risk: {risk} | Device: {dev.name}"
                                         log_alert(message) 
                                         beep(risk)
 
