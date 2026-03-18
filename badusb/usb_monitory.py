@@ -8,7 +8,7 @@ def monitor_usb(stop_event):
 
     monitor.filter_by(subsystem="input")
 
-    print("Monitoring USB devices...")
+    #print("Monitoring USB devices...")
 
     for action, device in monitor:
         

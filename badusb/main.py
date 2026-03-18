@@ -1,3 +1,4 @@
+import time
 from usb_monitory import monitor_usb
 import keystroke_monitor
 from threading import Thread,Event
@@ -14,9 +15,13 @@ try:
 except KeyboardInterrupt:
     print("Exiting program.")
     stop_event.set()
+    try:
+        time.sleep(0.5)
+    except KeyboardInterrupt:
+        pass
 
 finally:
     try:
-        usb_thread.join(timeout=2) 
+        usb_thread.join(timeout=2)
     except KeyboardInterrupt:
-        pass
+        pass 
