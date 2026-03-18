@@ -1,3 +1,4 @@
 sus_recent=False
 sus_insert_time=0
 is_sus=False
+sus_reset_needed=False

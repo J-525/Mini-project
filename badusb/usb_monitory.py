@@ -18,12 +18,12 @@ def monitor_usb(stop_event):
         if action == "add":
 
             if device.get("ID_INPUT_KEYBOARD") == "1" and device.device_node:
-                print("New keyboard device connected \n")
-                print("Device:", device.device_node)
+               # print("New keyboard device connected \n")
+                #print("Device:", device.device_node)
                 
                 sus.sus_recent = True
                 sus.sus_insert_time = time.time()
-                
+                sus.sus_reset_needed = True
                 #return device.device_node
 
 

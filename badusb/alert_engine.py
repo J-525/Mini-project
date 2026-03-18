@@ -35,7 +35,7 @@ def beep(risk):
     print(f"Risk Level: {risk}")
     for command in SUSPICIOUS_COMMANDS:
         if command in sus:
-            print(f"\n ALERT: Suspicious command detected: {command}")
+            #print(f"\n ALERT: Suspicious command detected: {command}")
             #print(f"Context: {sus}")
             print("Time:",time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
             break
