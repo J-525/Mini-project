@@ -27,7 +27,6 @@ def evaluate_risk(delays, total_keys, backspace_count):
     if mistake_ratio < config.MISTAKE_RATIO_MIN:
         risk += 2
 
-
     if sus.is_sus:
         #print(risk)
         risk += 5
