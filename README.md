@@ -56,4 +56,4 @@ The system consists of the following modules:
 
 ### Install Required Libraries
 ```bash
-pip install pyudev evdev
+pip install -r requirements.txt
