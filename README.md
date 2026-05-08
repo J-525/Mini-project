@@ -1,4 +1,4 @@
-# USB Attack Detection System
+#Bad USB Attack Detection System
 
 ## Overview
 This project presents a behavior-based USB attack detection system designed to identify malicious activities such as BadUSB and HID-based keystroke injection attacks. Traditional security solutions often fail to detect such attacks because they operate at the hardware or firmware level and do not involve malicious files.
